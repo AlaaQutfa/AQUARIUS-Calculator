@@ -8,7 +8,7 @@ header{
     width: 100%;
     background-color: #000016;
     display: flex;
-    z-index: 100;
+    z-index: 1;
     position: fixed;
 }
 .header-left{
@@ -89,6 +89,7 @@ section p a{
     color: #3a6cf4;
 }
 .divmood{
+    height: 100px;
     display: flex;
     justify-content: center;
 }
@@ -166,7 +167,7 @@ footer{
     color: #fff;
     display: flex;
     padding: 10px 0px 10px 0px;
-    margin-top: 10px;
+    z-index: 1;
 }
 .footer-title{
     width: 100%;
@@ -218,4 +219,69 @@ footer{
         color: #171718;
     }
     
+}
+@media only screen and (max-width: 1110px){
+    header{
+        height: 100px;
+        display: block;
+    }
+    .header-left{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    .header-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    main{
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 670px){
+    header{
+        height: 150px;
+    }
+    .header-right li{
+        display: block;
+        border-radius: 0px;
+    }
+    main{
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 620px){
+    footer{
+        height: 30px;
+    }
+    .footer-title{
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 520px){
+    #description{
+        height: fit-content;
+    }
+}
+@media only screen and (max-width: 375px){
+    table{
+        width: 90%;
+    }
+    #screen{
+        width: 50%; 
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #contact{
+        height: fit-content;
+
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+    }
 }
