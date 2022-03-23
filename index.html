@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alaa Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="https://alaaqutfa.netlify.app" target="_blanck" class="logo">
+                    <strong>
+                        AQUARIUS
+                    </strong>
+                    <span> 
+                        Calculator:
+                    </span>
+                </a>
+            </div>
+            <nav class="header-right">
+                <ul>
+                    <a href="#description">
+                        <li>
+                            DESCRIPTION
+                        </li>
+                    </a>    
+                    <a href="#use">  
+                        <li>
+                            USE OUR CALCULATOR
+                        </li>
+                    </a>
+                    <a href="#contact">
+                        <li>
+                            CONTACT
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="description">
+                <h1 id="title-section1" class="title-sections">
+                    Description about this site: 
+                </h1>
+                <p>
+                    This site was designed by Engineer <a href="https://www.facebook.com/aloosh2712000" target="_blanck">Alaa Qutfa</a>
+                </p>
+                <p>
+                    to provide you with a quick service product to perform calculations
+                </p>
+            </section>
+            <section id="use">
+                <div>    
+                    <h1 id="title-section2" class="title-sections">
+                    Use our Calculator: 
+                    </h1>
+                </div>
+                <div class="divmood">
+                    <button onclick="lightmood ()"> 
+                        <img src="light.png" class="mood" />
+                    </button>
+                    <button onclick="darkmood ()">
+                        <img src="dark.png" class="mood"  />
+                    </button>
+                </div>
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <form name="form">
+                                    <input type="text" name="textview" placeholder="0" id="screen" disabled/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th> <button type="button" class="btn" onclick="clean('')">AC</button> </th>
+                            <th> <button type="button" class="btn" onclick="back()">del</button> </th>
+                            <th> <button type="button" class="btn" onclick="insert('%')">%</button> </th>
+                            <th> <button type="button" class="btn-w" onclick="insert('/')">&#247;</button> </th>
+                        </tr>
+                        <tr>
+                            <th> <button type="button" class="btn-n" onclick="insert(7)">7</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(8)">8</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(9)">9</button> </th>
+                            <th> <button type="button" class="btn-w" onclick="insert('*')">&#215;</button> </th>
+                        </tr>
+                        <tr>
+                            <th> <button type="button" class="btn-n" onclick="insert(4)">4</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(5)">5</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(6)">6</button> </th>
+                            <th> <button type="button" class="btn-w" onclick="insert('-')">-</button> </th>
+                        </tr>
+                        <tr>
+                            <th> <button type="button" class="btn-n" onclick="insert(1)">1</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(2)">2</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert(3)">3</button> </th>
+                            <th> <button type="button" class="btn-w" onclick="insert('+')">+</button> </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"> <button type="button" onclick="insert(0)" id="zero" class="btn-n">0</button> </th>
+                            <th> <button type="button" class="btn-n" onclick="insert('.')">,</button> </th>
+                            <th> <button type="button" class="btn-w" onclick="equal()">=</button> </th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </section>
+            <section id="contact">
+                <div>
+                    <h1 id="title-section3" class="title-sections">
+                        Contact: 
+                    </h1>
+                </div>
+                <section id="icons">
+                    <span>
+                        <a href="https://www.facebook.com/aloosh2712000"><i class="fab fa-facebook"></i></a>
+                    </span>
+                    <span>
+                        <a href="https://www.twitter.com/aloosh2712000"><i class="fab fa-twitter"></i></a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/aloosh2712000/"><i class="fab fa-instagram"></i></a>
+                    </span>
+                    <span>
+                        <a href="https://www.youtube.com/channel/UCZSSiLAUdyBpaq5ZuAZsOzQ"><i class="fab fa-youtube"></i></a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/AlaaQutfa"><i class="fab fa-github"></i></a>
+                    </span>
+                    <span>
+                        <a href="https://linkedin.com/AlaaQutfa"><i class="fab fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p class="footer-title">
+                Copyrights @
+                <a href="">
+                    <span>AQUARIUS CODER</span>
+                </a>
+            </p>
+        </footer>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/abb62d7048.js" crossorigin="anonymous"></script>
+    </body>
+</html>
