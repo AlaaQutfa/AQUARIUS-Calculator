@@ -242,13 +242,14 @@ footer{
 @media only screen and (max-width: 670px){
     header{
         height: 150px;
+        position: static;
     }
     .header-right li{
         display: block;
         border-radius: 0px;
     }
     main{
-        padding-top: 150px;
+        padding-top: 0px;
     }
 }
 @media only screen and (max-width: 620px){
@@ -266,7 +267,7 @@ footer{
 }
 @media only screen and (max-width: 375px){
     table{
-        width: 90%;
+        width: 50%;
     }
     #screen{
         width: 50%; 
@@ -283,5 +284,37 @@ footer{
     .icons{
         display: flex;
         justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 280px){
+    header{
+        height: fit-content;
+    }
+    .header-left a strong{
+        display: block;
+    }
+    .header-right{
+        font-size: small;
+    }
+    main{
+        height:fit-content;
+    }
+    table{
+        width: 25%;
+        margin: auto;
+    }
+    #screen{
+        width: 20%;
+        font-size: 50px;
+        padding-right: 5px;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        font-size: medium;
+        font-weight: 400;
+    }
+    #zero{
+        width: 100px;      
     }
 }
